@@ -814,8 +814,9 @@ span.text-red {
 }
 
 @media screen and (max-width:800px) {
+
   .hero-banner-container {
-    height: 560px;
+    height:600px;
   }
 
   .hero-banner-image {
@@ -826,7 +827,7 @@ span.text-red {
   }
 
   .footer-banner-container {
-    height: 560px;
+    height: 600px;
     margin-top: 80px;
   }
 
@@ -870,6 +871,7 @@ span.text-red {
 
   .hero-banner-container h1 {
     font-size: 50px;
+    margin-left:3px;
   }
 
   .hero-banner-container h3 {
@@ -883,6 +885,8 @@ span.text-red {
 
   .desc {
     bottom: 60px;
+    top:65%;
+    left:6%;
   }
 
   .product-detail-container {
