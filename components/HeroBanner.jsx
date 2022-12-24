@@ -15,14 +15,14 @@ export default function HeroBanner({ heroBanner }) {
           className="hero-banner-image"
         />
 
-        <div>
+        <div className="banner">
           <Link href={`/product/${heroBanner.product}`}>
             <button type="button" className="hero-banner-button">
               {heroBanner.buttonText}
             </button>
           </Link>
           <div className="desc">
-            <h5>Description</h5>
+            <h5>{heroBanner.product.toUpperCase()}</h5>
             <p>{heroBanner.desc}</p>
           </div>
         </div>

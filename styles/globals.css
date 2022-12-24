@@ -192,9 +192,61 @@ span.text-red {
 .hero-banner-image {
   position: absolute;
   top: 0%;
-  right: 20%;
+  /* right: 20%; */
+  right: 33%;
   width: 450px;
   height: 450px;
+  transition: 0.3s;
+}
+
+.hero-banner-image:hover{
+  transform: translate(0, -15px);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 
@@ -202,7 +254,7 @@ span.text-red {
   position: absolute;
   right: 10%;
   bottom: 5%;
-  width: 300px;
+  width: 386px;
   line-height: 1.3;
   display: flex;
   flex-direction: column;
@@ -237,8 +289,8 @@ span.text-red {
 }
 
 .products-heading p {
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 19px;
+  font-weight: 350;
 }
 
 .footer-banner-container {
@@ -288,6 +340,11 @@ span.text-red {
   left: 25%;
 }
 
+.footer-banner-image:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
 .banner-desc .right {
   line-height: 1.4;
 }
@@ -298,6 +355,7 @@ span.text-red {
 }
 
 .banner-desc .right p {
+  inline-size:430px;
   font-size: 18px;
 }
 
@@ -716,24 +774,43 @@ span.text-red {
 
 .footer-banner-button:hover{
     transform: scale(1.1, 1.1);
-    transition: transform 0.2s ease-in-out;
 }
 
 .footer-banner-button{
   box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
     0px 3px 14px 2px rgba(0, 0, 0, 0.12),
     0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
 }
 
 .hero-banner-button:hover{
   transform: scale(1.1, 1.1);
-  transition: transform 0.2s ease-in-out;
 }
 
 .hero-banner-button{
   box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
     0px 3px 14px 2px rgba(0, 0, 0, 0.12),
     0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.desc{
+  top:25%;
+  right: 6%;
+}
+
+.desc h5{
+    font-weight: 800;
+    font-size: 55px;
+}
+
+.desc p{
+  inline-size:420px;
+  text-align:left;
+  font-size: 22px;
+  font-weight: 600;
+  color:white;
+  word-spacing:2px;
 }
 
 @media screen and (max-width:800px) {

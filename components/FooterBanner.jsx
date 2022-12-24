@@ -16,6 +16,12 @@ export default function FooterBanner({
     desc,
   },
 }) {
+  let descFinal;
+  if (desc.length > 29) {
+    const words = desc.split(" ");
+    const first30Words = words.slice(0, 29);
+    descFinal = first30Words.join(" ");
+  }
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
@@ -28,7 +34,7 @@ export default function FooterBanner({
         <div className="right">
           <p>{smallText}</p>
           <h3>{midText}</h3>
-          <p>{desc}</p>
+          <p>{desc.length > 29 ? descFinal : desc}</p>
           <Link href={`/product/${product}`}>
             <button type="button" className="footer-banner-button">
               {buttonText}
